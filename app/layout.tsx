@@ -1,3 +1,6 @@
+import "../styles/app.scss";
+import Header from "./header";
+
 export const metadata = {
   title: "OctoFocus",
   description: "EOD and TODO entry for OctoEmployees",
@@ -10,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+      </body>
     </html>
   );
 }
