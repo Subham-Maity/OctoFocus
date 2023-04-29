@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import { LogoutButton } from "../components/Clients";
 const Header = () => {
   return (
     <div className="header">
@@ -10,7 +10,7 @@ const Header = () => {
       <article>
         <Link href={"/"}>Home</Link>
         <Link href={"/profile"}>Profile</Link>
-        {/*<LogoutBtn />*/}
+        <LogoutButton />
       </article>
     </div>
   );
